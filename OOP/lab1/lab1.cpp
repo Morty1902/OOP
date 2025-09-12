@@ -14,8 +14,8 @@ double calculateB(double x, double y, double z) {
 
 double calculateA(double x, double y, double z, double result_b) {
     double a1 = pow(fabs(x), 0.43);
-    double a2 = exp(y-x) + sqrt(pow(fabs(pow(y, 2)+result_b), 0.22));
-    double a3 = 1 + pow(x, 2) * fabs(y-pow(tan(z), 2));
+    double a2 = exp(y-x) + pow(sqrt(fabs(pow(y, 2)+result_b)), 0.22);
+    double a3 = (1 + pow(x, 2)) * fabs(y-pow(tan(z), 2));
     double result_a = a1 + (a2 / a3);
     return result_a;
 }
