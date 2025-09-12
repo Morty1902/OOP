@@ -37,7 +37,7 @@ int main() {
                 double b = calculateB(x, y, z);
                 double a = calculateA(x, y, z, b);
                 cout << "Результат обчислення виразу b: " << b << endl;
-                cout << "Результат обчислення виразу a: " << a << endl;
+                cout << "Результат обчислення виразу a: " << a << endl << endl;
                 break;
             }
             case 2: {
@@ -48,6 +48,7 @@ int main() {
                 cin >> x_end;
                 cout << "Введіть крок : ";
                 cin >> x_step;
+                cout << endl;
 
                 for (double x = x_start; x <= x_end; x += x_step) {
                     double b = calculateB(x, y, z);
