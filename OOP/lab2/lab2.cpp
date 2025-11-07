@@ -43,7 +43,7 @@ public:
         return -1;
     }
 
-    int getElementAt(int index) const {
+    int getElement(int index) const {
         return data[index];
     }
     
@@ -83,7 +83,7 @@ public:
             return;
         }
         for (int i = list_data.getSize() - 1; i >= 0; i--) {
-            cout <<list_data.getElementAt(i)<< endl;
+            cout <<list_data.getElement(i)<< endl;
         }
     }
 };
@@ -126,6 +126,9 @@ int main() {
                 myStack.show();
                 break;
 
+            case 0:
+                cout << "Вихід" << endl;
+                break;                
             default:
                 cout << "Невірний вибір\n";
                 break;
